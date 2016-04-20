@@ -1,6 +1,16 @@
 $(document).ready(function(){
+	var userNumber;
+	do{
+	userNumber= prompt("Please enter a number");
+	}	while (!parseInt(userNumber)) 
 	
-	for(count=1; count <=100; count++){
+	
+fizzBuzz(parseInt(userNumber));
+
+});
+
+function fizzBuzz(maxNum) {
+		for(count=1; count <= maxNum ; count++){
 		$("body").append("<p>");
 
 		var printNum = true;
@@ -19,7 +29,5 @@ $(document).ready(function(){
 	}
 
 
-});
-
-
+}
 
